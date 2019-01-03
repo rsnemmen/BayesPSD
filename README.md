@@ -1,7 +1,7 @@
 BayesPSD applied to *Fermi* LAT light curve
 ===========================================
 
-`BayesPSD`: Bayesian power spectral analysis tools developed by [Daniela Huppenkothen](http://huppenkothen.org). 
+`BayesPSD`: Bayesian power spectral analysis tools developed by [Daniela Huppenkothen](http://huppenkothen.org). Based on [Huppenkothen et al. (2013)](http://iopscience.iop.org/article/10.1088/0004-637X/768/1/87/meta).
 
 This is a fork of the [original repo](https://github.com/dhuppenkothen/BayesPSD). This branch has the modified jupyter notebook to read and process the *Fermi* LAT light curve for NGC1275 (Perseus), performing a Bayesian search for quasi-periodic oscillations (QPOs). The results from this analysis were reported in [arXiv:1811.07215](https://arxiv.org/abs/1811.07215).
 
@@ -44,6 +44,8 @@ git clone https://github.com/rsnemmen/BayesPSD
 git checkout n1275
 ```
 
-2. Open the `./docs/Demo.ipynb` notebook and run it. At the end of the analysis, you should get a couple of new `png` files inside the docs folder. The most important one will be the `demo_ps_fit.png` which shows the power spectrum compared to two noise models. 
+2. Open the `./docs/Demo.ipynb` notebook and run it. At the end of the analysis, you should get a couple of new `png` files inside the docs folder. The most important one will be the `demo_ps_fit.png` which shows the power spectrum compared to two noise models: power-law and broken power-law. 
+
+Strong peaks in the residuals indicate evidence for QPOs. In this case, the signal is broadly consistent with noise. There is one significant QPO which is indicated with an arrow; however, this feature is compatible with the precession period of the orbit of the *Fermi* spacecraft [(Nemmen et al. 2018)](https://arxiv.org/abs/1811.07215).
 
 ![Periodogram for NGC1275 Fermi LAT light curve](./docs/n1275_fit.png)
