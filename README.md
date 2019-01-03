@@ -44,6 +44,6 @@ git clone https://github.com/rsnemmen/BayesPSD
 git checkout n1275
 ```
 
-2. Open the `./docs/Demo.ipynb` notebook and follow the instructions there. At the end of the analysis, you should get a couple of new 
+2. Open the `./docs/Demo.ipynb` notebook and run it. At the end of the analysis, you should get a couple of new `png` files inside the docs folder. The most important one will be the `demo_ps_fit.png` which shows the power spectrum compared to two noise models. 
 
-
+![Periodogram for NGC1275 Fermi LAT light curve](./docs/n1275_fit.png)
